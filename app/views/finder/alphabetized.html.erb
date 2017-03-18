@@ -1,0 +1,7 @@
+<h1>All Customers By Order<h1>
+<h3>
+  <%= link_to 'All customers', root_path %>
+  -
+  <%= link_to 'Customers missing email', missing_email_path %>
+</h3>
+<%= render partial: 'customers/customer', collection: @customers_by_order %>
