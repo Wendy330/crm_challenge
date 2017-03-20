@@ -1,7 +1,12 @@
 <div id="customer">
   <h2><%= customer.fullName %></h2>
   <%= image_tag"#{customer.image}" %>
-  <h4><%= customer.phone %></h4>
-  <h4><%= customer.email %></h4>
-  <h4><%= customer.notes %></h4>
+  <h4>Phone: <%= customer.phone %></h4>
+  <h4>Email: <%= customer.email %></h4>
+  <% if(customer.province_id.to_s.empty?) %>
+    <h4>Province: None</h4>
+  <% else %>
+    <h4>Province: <%= customer.province.name %></h4>
+  <% end %>
+  <h4>Notes: <%= customer.notes %></h4>
 </div>

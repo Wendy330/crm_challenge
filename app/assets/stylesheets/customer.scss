@@ -1,13 +1,13 @@
 body{
   background-color: #d6d6c2;
-  width: 43%;
+  width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 
   #customer{
     border: 1px solid grey;
-    width: 170px;
-    height: 360px;
+    width: 220px;
+    height: 400px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
@@ -17,6 +17,8 @@ body{
     -webkit-box-shadow: 2px 2px 1px #999999;
     box-shadow: 2px 2px 1px #999999;
     margin-bottom: 20px;
+    margin-right: 30px;
     display: inline-block;
+    float: left;
   }
 }
